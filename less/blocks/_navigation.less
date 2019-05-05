@@ -1,0 +1,87 @@
+.navigation {
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+	top: 51px;
+	left: 0;
+	right: 0;
+	
+	// Для планшетов и для десктопов
+	@media (min-width: 768px) {
+		position: absolute;
+	}
+	
+	.navigation__toggle {
+		display: block;
+		font-size: 38px;
+		position: absolute;
+		top: 23px;
+		right: 16px;
+		z-index: 2;
+		cursor: pointer;
+		@media(min-width: 768px) {
+			display: none;
+		}
+	}
+	.navigation__toggle--fixed {
+		position: fixed;
+	}
+	ul.navigation__list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		text-align: center;
+		display: none;
+		z-index: 1;
+		position: fixed;
+		// Указав эти свойства блок растянется
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		
+		background-color: rgba(11, 81, 136, 0.95);
+
+		@media(min-width: 768px) {
+			display: block;
+			position: absolute;
+			top: 60;
+		}
+
+		&--open {
+			display: flex;
+			-webkit-flex-direction: column;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+			-webkit-justify-content: center;
+			        justify-content: center;
+			-webkit-align-items: center;
+			        align-items: center;
+		}
+		li {
+			margin: 0 0 40px;
+			padding: 0;
+			// Отображаем как блок, чтобы элементы переходили на новую строчку
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			
+			@media (min-width: 768px) {
+				margin: 0;
+				padding: 0;
+				display: inline-block;
+				margin-right: 100px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	a {
+		color: #FFF;
+		text-decoration: none;
+		&:hover, &:focus, &:active {
+			color: @yellow;
+		}
+	}
+}

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Titles -->
+	<title>Владислав Кондраков - Персональный сайт портфолио</title>
+	
+	<!-- FontAwesome -->
+	<!-- <script src="https://use.fontawesome.com/46dae5c33f.js"></script> -->
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+	<!-- Syles -->
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- FavIcons -->
+	<!-- <link rel="shortcut icon" href="img/favicons/favicon-48x48.ico"  type="image/x-icon" /> -->
+    <!-- <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> -->
+
+    <!-- Typo -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/noto-webfont/noto.css">
+
+    <!-- FancyBox -->
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+</head>
+<body>
+
+	<!--[if lt IE 8]>
+	    <p class="browserupgrade">Вы используете <strong>устаревшую</strong> версию браузера. Пожалуйста <a href="http://browsehappy.com/">обновите свой браузер</a>.</p>
+	<![endif]-->
+	
+	<!-- Шапка страницы -->
+	<div class="header">
+		<div class="header__inner">
+			<nav class="navigation">
+				<!-- Navigation icon -->
+				<button id="navigation-button" class="cmn-toggle-switch cmn-toggle-switch__htx">
+					<span>toggle menu</span>
+				</button>
+				<!-- <div class="navigation__toggle navigation__toggle--fixed">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div> -->
+				<ul class="navigation__list">
+					<li><a href="#resume">Резюме</a></li>
+					<li><a href="#portfolio">Портфолио</a></li>
+					<li><a href="#contacts">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="header__centered-content">
+				<div class="user-photo user-photo--shadow">
+					<img src="usercontent/img/photo-small.jpg" alt="Моё фото">
+				</div>
+				<h1 class="header__title">Владислав Кондраков</h1>
+				<h2 class="header__subtitle">Верстальщик и Junior Frontend разработчик</h2>
+			</div>
+			<a id="mouse-scroll" href="#resume" class="mouse_scroll">
+				<div class="mouse">
+					<div class="wheel"></div>
+				</div>
+				<div>
+					<span class="m_scroll_arrows unu"></span>
+					<span class="m_scroll_arrows doi"></span>
+					<span class="m_scroll_arrows trei"></span>
+				</div>
+			</a>
+		</div>
+	</div>
+	<!-- // Шапка страницы -->
+	
+	<!-- Резюме -->
+	<div id="resume" class="section section--bottom-line section--bg-laptop">
+		<div class="container">
+			<div class="row">
+				<!-- Фото пользователя -->
+				<!-- hidden-xs - скрывает блок на мобилках -->
+				<div class="hidden-xs col-sm-2 col-lg-3">
+					<div class="user-photo user-photo--big">
+						<img src="usercontent/img/photo-big.jpg" alt="Моё фото">
+					</div>
+				</div>
+				<!-- // Фото пользователя -->
+
+				<!-- Резюме пользователя -->
+				<div class="col-sm-10 col-lg-9">
+					<div class="heading">Резюме</div>
+					<p class="resume-name"><strong>Владислав Кондраков</strong></p>
+					<p>21 год, Оренбург, Россия</p>
+					<p>Я верстальщик и Junior Frontend разработчик из Оренбурга. Мне 21 год.</p>
+
+					<p>Учусь в университете. Год назад начал учить веб-разработку и мне это нравится. Хочу в дальнейшем заниматься разработкой современных сайтов и приложений, устроиться на работу по этому направлению.</p>
+					
+					<!-- Опыт и Образование -->
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="heading heading--medium heading--black">Опыт работы</div>
+							<ul class="definition-list">
+								<li class="definition-list__item">
+									<div class="definition-list__def">2018 — настоящее время</div>
+									<div class="definition-list__desc">
+										<p>Фрилансер</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<div class="heading heading--medium heading--black">Образование</div>
+							<ul class="definition-list">
+								<li class="definition-list__item">
+									<div class="definition-list__def">2005 — 2016</div>
+									<div class="definition-list__desc">
+										<p>МДОАУ СОШ №52 г.Орска</p>
+									</div>
+								</li>
+								<li class="definition-list__item">
+									<div class="definition-list__def">апрель 2018</div>
+									<div class="definition-list__desc">
+										<p>Курсы по созданию иллюстраций в Adobe Illustrator - Highlights School</p>
+									</div>
+								</li>
+								<li class="definition-list__item">
+									<div class="definition-list__def">декабрь 2018 — март 2019</div>
+									<div class="definition-list__desc">
+										<p>Курсы по веб-разработке. Frontend и Backend - WebCademy.ru</p>
+									</div>
+								</li>
+								<li class="definition-list__item">
+									<div class="definition-list__def">февраль — май 2019</div>
+									<div class="definition-list__desc">
+										<p>Курсы по верстке сайтов HTML5, CSS3 - WebCademy.ru</p>
+									</div>
+								</li>
+								<li class="definition-list__item">
+									<div class="definition-list__def">2016 — настоящее время</div>
+									<div class="definition-list__desc">
+										<p>Оренбургский Государственный университет, специальность компьютерная безопасность.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // Опыт и Образование -->
+					<a href="usercontent/pdf/Владислав-Кондраков-Верстальщик.pdf" class="button" download>
+						<i class="fa fa-download" aria-hidden="true"></i>
+						Скачать резюме
+					</a>
+				</div>
+				<!-- // Резюме пользователя -->
+			</div>
+		</div>
+	</div>
+	<!-- // Резюме -->
+
+	<!-- Портфолио -->
+	<div id="portfolio" class="section section--padding-smaller section--bg-gear section--bottom-line">
+		<div class="container">
+			<div class="heading heading--center">Мои работы</div>
+
+			<!-- Фильтр работ -->
+			<div class="filter-block">
+				<ul class="filter-block__block">
+					<li class="filter-block__element">
+						<span class="filter-block__button filter" data-filter="all">Все</span>
+					</li>
+					<li class="filter-block__element">
+						<span data-filter=".html-css" class="filter-block__button filter">HTML+CSS</span>
+					</li>
+					<li class="filter-block__element">
+						<span data-filter=".bootstrap" class="filter-block__button filter">Bootstrap</span>
+					</li>
+					<li class="filter-block__element">
+						<span data-filter=".tutorial" class="filter-block__button filter">учебные</span>
+					</li>
+					<li class="filter-block__element">
+						<span data-filter=".payed" class="filter-block__button filter">на заказ</span>
+					</li>
+				</ul>
+			</div>
+			<!-- // Фильтр работ -->
+			
+			<!-- Блок - ряд с работами -->
+			<div id="portfolio-projects" class="row">
+				<!-- Блок отдельной работы -->
+				<div class="col-sm-4 mix html-css tutorial">
+					<div class="portfolio-item">
+						<a href="usercontent/img/full/organic.png" class="portfolio-item__image fancybox" data-fancybox="group" data-caption="Учебный макет Organica">
+							<div class="portfolio-item__image__hover">
+								<i class="fa fa-search" aria-hidden="true"></i><br>
+								<span>смотреть макет</span>
+							</div>
+							<img src="usercontent/img/project_organica.jpg" alt="Работа в портфолио">
+						</a>
+						<div class="portfolio-item__title">
+							<a target="_blank" href="http://websweet.ru/project-organica/">Учебный макет Organica</a>
+						</div>
+						<div class="portfolio-item__description">
+							Верстка одностраничного сайта по PSD макету.
+						</div>
+					</div>
+				</div>
+				<!-- // Блок отдельной работы -->
+				<!-- Блок отдельной работы -->
+				<div class="col-sm-4 mix bootstrap html-css tutorial">
+					<div class="portfolio-item">
+						<a href="usercontent/img/full/apollo.png" class="portfolio-item__image fancybox" data-fancybox="group" data-caption="Учебный макет Аполло">
+							<div class="portfolio-item__image__hover">
+								<i class="fa fa-search" aria-hidden="true"></i><br>
+								<span>смотреть макет</span>
+							</div>
+							<img src="usercontent/img/project_apollo.jpg" alt="Работа в портфолио">
+						</a>
+						<div class="portfolio-item__title">
+							<a href="http://websweet.ru/apollo/" target="_blank">Учебный макет Аполло</a>
+						</div>
+						<div class="portfolio-item__description">Верстка лендинга хостинг компании. Мобильная адаптивность.</div>
+					</div>
+				</div>
+				<!-- // Блок отдельной работы -->
+				<!-- Блок отдельной работы -->
+				<div class="col-sm-4 mix bootstrap html-css tutorial">
+					<div class="portfolio-item">
+						<a href="usercontent/img/full/portfolio.png" class="portfolio-item__image fancybox" data-fancybox="group" data-caption="Личный сайт портфолио">
+							<div class="portfolio-item__image__hover">
+								<i class="fa fa-search" aria-hidden="true"></i><br>
+								<span>смотреть макет</span>
+							</div>
+							<img src="usercontent/img/project_portfolio.jpg" alt="Работа в портфолио">
+						</a>
+						<div class="portfolio-item__title">
+							<a href="http://websweet.ru/personal/">Личный сайт портфолио</a>
+						</div>
+						<div class="portfolio-item__description">Верстка личного сайта портфолио на котором вы сейчас находитесь.</div>
+					</div>
+				</div>
+				<!-- // Блок отдельной работы -->
+				<!-- Блок отдельной работы -->
+				<div class="col-sm-4 mix bootstrap html-css">
+					<div class="portfolio-item">
+						<a href="usercontent/img/full/tatoo.jpg" class="portfolio-item__image fancybox" data-fancybox="group" data-caption="Учебный макет тату студии">
+							<div class="portfolio-item__image__hover">
+								<i class="fa fa-search" aria-hidden="true"></i><br>
+								<span>смотреть макет</span>
+							</div>
+							<img src="usercontent/img/project_tatoo.jpg" alt="Работа в портфолио">
+						</a>
+						<div class="portfolio-item__title">
+							<a href="http://websweet.ru/tatoo/" target="_blank">Учебный макет AMZ TATOO</a>
+						</div>
+						<div class="portfolio-item__description">Верстка по PSD и написание скриптов лендинга тату студии. Мобильная адаптивность.</div>
+					</div>
+				</div>
+				<!-- // Блок отдельной работы -->
+				<!-- Блок отдельной работы -->
+				<div class="col-sm-4 mix bootstrap tutorial">
+					<div class="portfolio-item">
+						<a href="usercontent/img/full/php-portfolio.jpg" class="portfolio-item__image fancybox" data-fancybox="group" data-caption="Сайт портфолио">
+							<div class="portfolio-item__image__hover">
+								<i class="fa fa-search" aria-hidden="true"></i><br>
+								<span>смотреть макет</span>
+							</div>
+							<img src="usercontent/img/php_portfolio.jpg" alt="Работа в портфолио">
+						</a>
+						<div class="portfolio-item__title">
+							<a href="https://github.com/Screamer4u/wd05-project-kondrakov" target="_blank">Бэкенд для портфолио</a>
+						</div>
+						<div class="portfolio-item__description">Сайт портфолио создавался большой командой. С моей стороны были реализованы написание скриптов на JS, CMS на PHP и корзина товаров с оплатой.</div>
+					</div>
+				</div>
+				<!-- // Блок отдельной работы -->
+				<!-- Блок отдельной работы -->
+				<div class="col-sm-4 mix payed">
+					<div class="portfolio-item">
+						<a href="usercontent/img/full/builder.jpg" class="portfolio-item__image fancybox" data-fancybox="group" data-caption="Сайт для строительной компании">
+							<div class="portfolio-item__image__hover">
+								<i class="fa fa-search" aria-hidden="true"></i><br>
+								<span>смотреть макет</span>
+							</div>
+							<img src="usercontent/img/project_builder.jpg" alt="Работа в портфолио">
+						</a>
+						<div class="portfolio-item__title">
+							<a href="http://psi56.ru/" target="_blank">Строительная компания</a>
+						</div>
+						<div class="portfolio-item__description">Сайт создавался в команде. С моей стороны осуществлялась работа тимлидера (составление доски задач), настройка темы и серверные работы.</div>
+					</div>
+				</div>
+				<!-- // Блок отдельной работы -->
+			</div>
+			<!-- // Блок - ряд с работами -->
+		</div>
+	</div>
+	<!-- // Портфолио -->
+	
+	<!-- Контакты -->
+	<div id="contacts" class="block-bg contacts section section--padding-smaller section--bg-cloud">
+		<div class="container">
+			<div class="row">
+				<!-- Контакты - текст -->
+				<div class="col-sm-6">
+					<div class="heading heading--white">Контакты</div>
+					<div class="contacts__description">
+						<p>Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  я к вашим услугам.</p>
+					</div>
+					<!-- Контактные данные -->
+					<div class="row">
+						<!-- Email, Skype -->
+						<div class="col-lg-6">
+							<ul class="definition-list">
+								<li class="definition-list__item">
+									<div class="definition-list__def definition-list__def--light">Email</div>
+									<div class="definition-list__desc">
+										<p><a href="mailto:info@websweet.ru">info@websweet.ru</a></p>
+									</div>
+								</li>
+							</ul>
+							<ul class="definition-list">
+								<li class="definition-list__item">
+									<div class="definition-list__def definition-list__def--light">SKYPE</div>
+									<div class="definition-list__desc">
+										<p><a href="skype:emelyan.kazakov?chat">vladan982004</a></p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- // Email, Skype -->
+						<!-- Телефон, Адрес -->
+						<div class="col-lg-6">
+							<ul class="definition-list">
+								<li class="definition-list__item">
+									<div class="definition-list__def definition-list__def--light">телефон</div>
+									<div class="definition-list__desc">
+										<p><a href="tel:+79068308125">+7 (906) 830-81-25</a></p>
+									</div>
+								</li>
+							</ul>
+							<ul class="definition-list">
+								<li class="definition-list__item">
+									<div class="definition-list__def definition-list__def--light">адрес</div>
+									<div class="definition-list__desc">
+										<p>Россия, Оренбург</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- // Телефон, Адрес -->
+					</div>
+					<!-- // Контактные данные -->
+					<!-- Cоциальные сети -->
+					<ul class="definition-list">
+						<li class="definition-list__item">
+							<div class="definition-list__def definition-list__def--light">Cоциальные сети</div>
+							<div class="definition-list__desc">
+								<div class="social-icons">
+									<a target="_blank" href="https://vk.com/id122826197" class="fa fa-vk" aria-hidden="true"></a>
+									<!-- <i class="fa fa-twitter" aria-hidden="true"></i> -->
+									<a target="_blank" href="https://github.com/Screamer4u" class="fa fa-github" aria-hidden="true"></a>
+									<a target="_blank" href="https://www.facebook.com/profile.php?id=100008625737975" class="fa fa-facebook" aria-hidden="true"></a>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- // Cоциальные сети -->
+				</div>
+				<!-- // Контакты - текст -->
+				<!-- Контакты - форма -->
+				<div class="col-sm-6">
+					<div class="heading heading--medium heading--white heading--padding-top">Связаться со мной</div>
+					<form id="contact-form" class="contact-form" method="POST">
+
+						 <!-- Hidden Required Fields -->
+		                <!-- <input type="hidden" name="project_name" value="Персональный сайт Владислава Кондракова">
+		                <input type="hidden" name="admin_email" value="info@websweet.ru">
+		                <input type="hidden" name="form_subject" value="Обратная связь с сайта"> -->
+		                <!-- END Hidden Required Fields -->
+
+						<input type="text" class="contact-form__input" name="name" placeholder="Имя">
+						<input type="text" class="contact-form__input" name="email" placeholder="Email">
+						<!-- Обернули, чтобы точно работал last-of-type -->
+						<div class="clearfix">
+							<input type="text" class="contact-form__input contact-form__input--half-width" name="skype" placeholder="Skype">
+							<input type="text" class="contact-form__input contact-form__input--half-width" name="phone" placeholder="Телефон">
+						</div>
+						<div class="contact-form__bg-pencil">
+							<textarea class="contact-form__textarea" name="message" placeholder="Ваше сообщение"></textarea>
+						</div>
+						<input type="submit" class="contact-form__submit" name="contacts-form" value="Отправить">
+					</form>
+					<div id="answer"></div>
+				</div>
+				<!-- // Контакты - форма -->
+			</div>
+		</div>
+	</div>
+	<!-- // Контакты -->
+	
+	<!-- Копирайт -->
+	<div class="copyright">
+		<div class="container">
+			<p class="copyright__label">© 2019 Владислав Кондраков</p>
+			<p>Верстальщик и Junior Frontend разработчик из Оренбурга, занимаюсь версткой и созданием сайтов.</p>
+			<p>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a target="_blank" href="http://webcademy.ru/">WebCademy.ru</a></p>
+		</div>
+	</div>
+	<!-- // Копирайт -->
+
+	<!-- Vendor scripts -->
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/mixitup2/jquery.mixitup.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+	<script src="libs/jquery/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script src="libs/jquery.validate/jquery.validate.js"></script>
+
+	<!-- Custom scripts -->
+	<script src="js/navigation.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>

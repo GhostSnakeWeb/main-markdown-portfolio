@@ -1,0 +1,120 @@
+.contact-form__input {
+	color: #00599A;
+	font-size: 16px;
+	font-weight: 700;
+	
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px 19px;
+	
+	-webkit-border-radius: 8px;
+	        border-radius: 8px;
+	background-color: #FFF;
+	border: 3px solid #fff;
+	
+	&:active, &:focus, &:hover {
+ 		border: 3px solid rgb(162, 209, 244);
+	}
+}
+.contact-form__input--half-width {
+	// float удалит пустой пробел между инпутами
+	float: left;
+	width: 49%;
+	margin-right: 2%;
+	// Псевдокласс :last-of-type задает правила стилей для последнего элемента в списке дочерних элементов своего родителя.
+	&:last-of-type {
+		margin-right: 0;
+	}
+}
+.contact-form__textarea {
+	.contact-form__input;
+	height: 128px;
+}
+@media(min-width: 1200px) {
+	.contact-form__bg-pencil {
+		position: relative;
+	}
+	.contact-form__bg-pencil:after {
+		position: absolute;
+		// Положение относительно контейнера
+		left: 65%;
+		top: 75%;
+		display: block;
+		width: 203px;
+		height: 153px;
+		content: "";
+		background-image: url("../img/bg/pencil.png");
+		background-repeat: no-repeat;
+		background-position: left top;
+	}
+}
+.contact-form__submit {
+	width: 100%;
+	font-size: 18px;
+	@media(min-width: 768px) {
+		font-size: 20px;
+		width: auto;
+	}
+	@media(min-width: 1200px) {
+		font-size: 22px;
+		width: auto;
+	}
+	font-weight: 700;
+	padding: 8px 47px 12px;
+	text-align: center;
+	color: #FFF;
+	border: 4px solid #fff;
+	-webkit-border-radius: 80px;
+	        border-radius: 80px;
+	background-color: transparent;
+	&:hover, &:focus {
+		color: #065A97;
+		background-color: #FFF;
+		border-color: #FFF;
+	}
+	&:active {
+		color: @yellow;
+		border-color: @yellow;
+		background-color: transparent;
+	}
+}
+label.error {
+	position: relative;
+	background-color: #c62828;
+	display: block;
+	-webkit-border-radius: 8px;
+	        border-radius: 8px;
+	color: #FFF;
+	padding: 5px 15px 8px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	margin-top: 2px;
+	
+	@cornerSize: 12px;
+	// Делаем уголок, который будет показывать к чему относится ошибка
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 100%;
+		left: 40px;
+		margin-left: -@cornerSize;
+		width: 0;
+		height: 0;
+		border-bottom: @cornerSize solid #c62828;
+		border-right: @cornerSize solid transparent;
+		border-left: @cornerSize solid transparent;
+	}
+}
+.contact-form__success {
+	position: relative;
+	background-color: #fff;
+	display: block;
+	-webkit-border-radius: 8px;
+	        border-radius: 8px;
+	color: #4CAF50;
+	padding: 5px 15px 8px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	margin-top: 2px;
+	font-size: 20px;
+}

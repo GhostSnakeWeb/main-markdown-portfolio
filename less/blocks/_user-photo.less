@@ -1,0 +1,30 @@
+.user-photo {
+	/* overflow: hidden - позволяет устранить выход картинки за пределы блока, в котором она лежит */
+	/* overflow - в целом определяет что нужно делать с элементами, которые выходят за пределы блока */
+	overflow: hidden;
+	height: 110px;
+	width: 110px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 27px;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	background-image: url(../usercontent/img/user-avatar-placeholder-small.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+.user-photo--big {
+	max-width: 100%;
+	height: auto;
+	background-image: url(../usercontent/img/user-avatar-placeholder-big.jpg);
+	@media(min-width: 1200px) {
+		width: 205px;
+		height: 205px;
+	}
+}
+.user-photo--shadow {
+  	box-shadow: 0px 0px 40px 0px rgba(72, 119, 159, 1);
+}

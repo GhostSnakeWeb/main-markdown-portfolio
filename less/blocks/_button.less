@@ -1,0 +1,31 @@
+.button {
+	display: inline-block;
+	cursor: pointer;
+	
+	font-size: 16px;
+	font-weight: 700;
+	color: #FFF;
+
+	padding: 11px 26px 14px;
+	background-color: @blueHeading;
+	-webkit-border-radius: 60px;
+	        border-radius: 60px;
+  	box-shadow: 0px 3px 15px 0px rgba(0, 82, 194, 0.6);
+	
+	&:hover, &:focus {
+		color: @blueHeading;
+		background-color: #fff;
+		text-decoration: none;
+	}
+
+	&:active {
+		color: @yellow;
+		text-decoration: none;
+		background-color: @blueHeading;
+	}
+	
+	.fa {
+		font-size: 18px;
+		margin-right: 5px;
+	}
+}

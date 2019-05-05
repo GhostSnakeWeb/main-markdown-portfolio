@@ -1,0 +1,135 @@
+.portfolio-item {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	// 360px - размер ширины картинки. При меньшей ширине экрана картинка масштабируется корректно.
+	// Если не указать макисмальную ширину то появится горизонтальный скролл
+	max-width: 360px;
+}
+.portfolio-item__image {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin-bottom: 15px;
+	background-image: url('../img/placeholders/project_placeholder.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	min-height: 190px;
+	
+	@media (min-width: 768px){
+		min-height: 150px;
+		height: 150px;
+	}
+	@media (min-width: 992px){
+		height: 200px;
+	}
+	@media (min-width: 1200px){
+		margin-bottom: 16px;
+		height: 250px;
+	}
+}
+.portfolio-item__image__hover {
+	position: absolute;
+	padding-top: 60px;
+	top: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 26px;
+	color: #FFF;
+	background-color: rgba(0, 82, 194, 0.9);
+	
+	-webkit-transition: top 0.5s ease-out;
+	   -moz-transition: top 0.5s ease-out;
+	    -ms-transition: top 0.5s ease-out;
+	     -o-transition: top 0.5s ease-out;
+	        transition: top 0.5s ease-out;
+	
+	&:hover {
+		color: #FFF;
+	}
+
+	.fa {
+		font-size: 64px;
+		margin-bottom: 15px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		// translate - перемещает объект на указанную ширину и выосту данного объекта
+		-webkit-transform: translate(-50%,-50%);
+		   -moz-transform: translate(-50%,-50%);
+		    -ms-transform: translate(-50%,-50%);
+		     -o-transform: translate(-50%,-50%);
+		        transform: translate(-50%,-50%);
+		
+		@media (min-width: 768px){
+			font-size: 50px;
+		}
+		@media (min-width: 1200px){
+			font-size: 64px;
+			position: static;
+			
+			// Убираем сдвиг элемента на ПК
+			-webkit-transform: translate(0%, 0%);
+			   -moz-transform: translate(0%, 0%);
+			    -ms-transform: translate(0%, 0%);
+			     -o-transform: translate(0%, 0%);
+			        transform: translate(0%, 0%);
+		}
+	}
+	span {
+		display: none;
+		
+		@media (min-width: 1200px){
+			display: inline-block;
+		}
+	}
+}
+.portfolio-item__image:hover .portfolio-item__image__hover {
+	// Делаем, чтобы появлялся блок только при наведении
+	display: block;
+	top: 0%;
+}
+.portfolio-item__title {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	
+	a, span {
+		color: #000;
+		text-decoration: none;
+		
+		@media (min-width: 1200px){
+			border-bottom: 1px dotted #000;
+		}
+	}
+
+	a {
+		&:hover, &:active, &:focus {
+			color: @blueHeading;
+			text-decoration: none;
+		}
+		@media (min-width: 1200px){			
+			&:hover, &:active, &:focus {
+				border-bottom: 1px dotted @blueHeading;
+			}
+		}
+	}
+
+	@media (min-width: 1200px){
+		font-size: 24px;
+	}
+}
+.portfolio-item__description {
+	font-size: 14px;
+	line-height: 1.42;
+
+	@media (min-width: 1200px){
+		font-size: 16px;
+		line-height: 1.5;	
+	}
+}
